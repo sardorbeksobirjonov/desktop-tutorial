@@ -1,0 +1,51 @@
+header{
+    background-image:  url('img/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    background-color: rgba(0,0,0,0.81);
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-right {
+    animation: slideInFromRight 2s forwards; /* Animatsiyani sekinlashtirdik */
+}
+
+.slide-in-left {
+    animation: slideInFromLeft 2s forwards; /* Animatsiyani sekinlashtirdik */
+}
+
+.hover\:scale-110:hover {
+    transform: scale(1.1);
+}
+
+.transition-transform {
+    transition: transform 0.5s ease-in-out; /* Kattalashish va o'zgarish vaqtini oshirdik */
+}
+        body {
+            background-image: url('https://www.toptal.com/designers/subtlepatterns/uploads/double-bubble-outline.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
